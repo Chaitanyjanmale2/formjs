@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE AND JSON</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div  id="divform">
+         <form  id="formSubmit" >
+            <div class="row"> 
+                <div class="col-25">
+                  <label >Select Your Source:</label>
+                </div>
+                <div class="col-75">
+                    
+                  <select disabled >
+                      <option value="Google Cloud Storage">Google Cloud Storage</option>
+                  </select>
+                </div>
+              </div>
+          <div class="row"> 
+            <div class="col-25">
+              <label >Provide a name for pipeline:</label>
+            </div>
+            <div class="col-75">
+              <input autocomplete="off" type="text" name="namepipe"  id="namePipe" placeholder="e.g.,cust_shop_energy_gateway001">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label >GSC project name:</label>
+            </div>
+            <div class="col-75">
+              <input autocomplete="off" type="text" name="projectid"  id="projectId"  placeholder="project-id">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>GSC bucket name:</label>
+            </div>
+            <div  class="col-75">
+                <input autocomplete="off" type="text" name="bucketname"  id="bucketName"  placeholder="gs://your-bucket">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label >Input  Cloud Storage File:</label>
+            </div>
+            <div class="col-75">
+                <input autocomplete="off" type="text" name="filename"  id="fileName" placeholder="GCS location of your file">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>GCS credential:</label>
+            </div>
+            <div class="col-75" style="margin-bottom: 0px;">
+                <input autocomplete="off" type="text" style="margin-bottom: 0px; background-color: rgba(169, 169, 169, 0.788);" id="gcsCred" name="gcscred"  placeholder="">
+                <div id="infop">Example:gs://your-bucket/your-files/01.csv</div>
+               
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-25">
+              <label >Run Every:</label>
+            </div>
+            <div class="col-75">
+                <input autocomplete="off" type="text" id="timeMin" name="timemin"  placeholder="(in minutes)">
+            </div>
+          </div>
+          <div class="row ">
+              <div class="col-25 btnsubmit">
+                  <label>
+                      <button  type="submit" > submit</button> 
+                    
+                 
+                </label>
+            </div>
+            <div class="col-75">
+               <button>cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>  
+    
+  
+    
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
