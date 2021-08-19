@@ -22,19 +22,19 @@
             )==true)
             
             &&
-            ((namePipex.length)&&(gcsCredx.length)&&(bucketNamex.length)&&(timeMinx.length)&&(fileNamex.length)&&(projectIdx.length))
+            ((namePipex.length<=5)&&(gcsCredx.length<=5)&&(bucketNamex.length<=5)&&(timeMinx.length<=5)&&(fileNamex.length<=5)&&(projectIdx.length<5))==true
 
-            <=5
             )
     {
        
         return true
-    }else{ 
+    }
+    else{ 
         alert("NO SPACES"+"=="+"MIN LENGTH 5"+"=="+"NO SPECIAL CHAR"+"=="+"NO START WITH +,-,_")
         return false
        
     }
-        
+
             
            
     
